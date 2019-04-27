@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budgety</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="upper">
+        <div class="upperText">
+            <div>Available budget in <span class="date"></span></div>
+
+            <div class="money">+ 3,002.58</div>
+
+            <div class="upperIncome">
+                <div id="incomeText">INCOME</div>
+                <div id="incomeNum">+ 4,000.00</div>
+            </div>
+            
+            <div class="upperExpenses">
+                <div id="expensesText">EXPENSES</div>
+                <div id="expensesNum"><span id="expNum">- 997.42</span><div class="labelPerc">25%</div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lower">
+        <div class="add">
+            <select id="select">
+                <option value="-" selected>-</option>
+                <option value="+">+</option>
+            </select>
+        
+            <input type="text" size="40" id="description" placeholder="Add description">
+            <input type="number" id="value" placeholder="Value">
+            <button id="add_btn"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+
+        <div class="lists">
+            
+            <div class="lowerIncome">
+                <div class="lowerIncome_title">INCOME</div>
+                <div class="incomeList">
+
+                    <!-- <div class="item" id="inc-0">
+                        <div class="item_desc">Project</div>
+                        <div class="right">
+                            <div class="item_val">
+                                1500
+                            </div>
+                            <div class="btn_delete">
+                                <button class="btn_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="inc-1">
+                        <div class="item_desc">Project</div>
+                        <div class="right">
+                            <div class="item_val">
+                                1500
+                            </div>
+                            <div class="btn_delete">
+                                <button class="btn_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+
+            </div>
+
+            <div class="lowerExpenses">
+                <div class="lowerExpenses_title">EXPENSES</div>
+                <div class="expensesList">
+
+                    <!-- <div class="item" id="exp-0">
+                        <div class="item_desc">Project</div>
+                        <div class="right">
+                            <div class="item_val">
+                                1500
+                                <div class="perc">-25%</div>
+                            </div>
+                            
+                            <div class="btn_delete">
+                                <button class="btn_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="exp-1">
+                        <div class="item_desc">Project</div>
+                        <div class="right">
+                            <div class="item_val">
+                                1500
+                                <div class="perc">-25%</div>
+                            </div>
+                            
+                            <div class="btn_delete">
+                                <button class="btn_delete-btn"><i class="ion-ios-close-outline"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

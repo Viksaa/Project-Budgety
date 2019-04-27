@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Open Sans;
+}
+
+.upper {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
+    background-size: cover;
+    position: relative;
+}
+
+.upperText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    /* margin: 0 auto; */
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.money {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    text-shadow: 3px 3px 5px #555;
+}
+
+.lower {
+    width: 100%;
+    height: 60vh;
+}
+
+.upperIncome,
+.upperExpenses {
+    width: 350px;
+    height: 25px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 3px #555;
+}
+
+#incomeText,
+#expensesText {
+    float: left;
+    color: #000;
+    font-weight: 400;
+    font-size: 15px;
+    position: absolute;
+    margin-top: 2px;
+}
+
+#incomeNum,
+#expensesNum {
+    float: right;
+    font-weight: 400;
+    margin-top: 2px;
+    text-shadow: 1px 1px 1px #555;
+}
+
+.upperIncome {
+    background: #28B9B5;
+    margin-bottom: 10px;
+}
+
+.upperExpenses {
+    background: #FF5049;
+}
+
+.perc,
+.labelPerc {
+    width: 34px;
+    /* height: 20px; */
+    background: rgba(255,255,255,0.2);
+    border-radius: 3px;
+    font-size: 11px;
+    padding: 3px 0;
+    font-weight: 300;
+    text-shadow: none;
+    text-align: center;
+    float: right;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.labelPerc {
+    
+}
+
+.add {
+    padding: 15px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+#select {
+    width: 53px;
+    height: 41px;
+    padding-left: 10px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: border 0.2s;
+}
+
+#description,
+#value {
+    padding: 12px 15px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+
+#value { width: 70px; }
+
+#add_btn {
+    color:#FF5049;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 33px;
+    display: inline-block;
+    line-height: 1.1;
+    vertical-align: middle;
+    transition: transform 0.05s;
+    /* transition: color 0.5s; */
+}
+
+#add_btn:active {
+    transform: translateY(2px);
+    /* color: #FF5049; */
+}
+
+#select:focus,
+#description:focus,
+#value:focus {
+    outline: none;
+    border: 1px solid #FF5049;
+}
+
+#add_btn:focus { outline: none; }
+
+.lists {
+    width: 920px;
+    /* margin: 50px auto;  */
+    position: absolute;
+    left: 50%;
+    /* top: 500px; */
+    top: 55%;
+    transform: translateX(-50%);
+}
+
+.lowerIncome {
+    width: 450px;
+    float: left;
+}
+
+.lowerExpenses {
+    width: 450px;
+    float: left;
+    margin-left: 20px;
+}
+
+.lowerIncome_title {
+    color: #28B9B5;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.lowerExpenses_title {
+    color: #FF5049;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.item {
+    height: 20px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background: #f7f7f7; }
+
+.item_desc {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.item_val {
+    float: left;
+    transition: transform 0.3s;
+}
+
+.btn_delete-btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.btn_delete {
+    float: left;
+}
+
+.btn_delete-btn:active { transform: translateY(2px); }
+.btn_delete-btn:focus { outline: none; }
+
+.item:hover .btn_delete-btn { display: block; }
+.item:hover .item_val { transform: translateX(-20px); }
+
+.lowerExpenses .btn_delete-btn,
+.lowerExpenses .item_val { color: #FF5049; }
+
+.lowerIncome .btn_delete-btn,
+.lowerIncome .item_val { color: #28B9B5; }
+
+.lowerExpenses .perc {
+    background: #FFDAD9;
+    line-height: 14px;
+}
+
+.green-focus:focus {
+    border-color: #28B9B5 !important;
+}
+
+.green {
+    color: #28B9B5 !important;
+}
